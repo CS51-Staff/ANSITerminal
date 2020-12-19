@@ -28,7 +28,8 @@ open Printf
 open Scanf
 include ANSITerminal_common
 
-let isatty = ref Unix.isatty
+let isatty = ref (fun fd -> Unix.isatty fd || Sys.getenv_opt "CI" !=
+                                              None) ;; 
 
 let is_out_channel_atty ch = !isatty(Unix.descr_of_out_channel ch)
 
