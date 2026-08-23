@@ -1,5 +1,11 @@
 ![Continuous Integration](https://github.com/Chris00/ANSITerminal/actions/workflows/main.yml/badge.svg)
 
+> This is CS51's fork (`CS51-Staff/ANSITerminal`, upstream `Chris00/ANSITerminal`),
+> rebased for OCaml 5.x compatibility with CI-environment color support added.
+> `Setup/cs51_install.sh` pins it from this fork's `master` branch rather than
+> installing the upstream package via `opam`. Everything below is upstream's
+> own README, otherwise unmodified.
+
 ANSITerminal
 ============
 
